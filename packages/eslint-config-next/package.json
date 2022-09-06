@@ -8,9 +8,6 @@
     "url": "https://github.com/neuledge/eslint.git"
   },
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "clean": "rm -rf lib *.tsbuildinfo"
   },
