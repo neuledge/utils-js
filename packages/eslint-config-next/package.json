@@ -1,0 +1,31 @@
+{
+  "name": "@neuledge/eslint-config-next",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/eslint.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "clean": "rm -rf lib *.tsbuildinfo"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/plugin-syntax-flow": "^7.18.6",
+    "@babel/plugin-transform-react-jsx": "^7.18.10",
+    "@neuledge/eslint-config": "^0.0.0",
+    "eslint-config-next": "^12.2.3",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}

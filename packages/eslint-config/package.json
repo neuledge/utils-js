@@ -1,0 +1,29 @@
+{
+  "name": "@neuledge/eslint-config",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/eslint.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "clean": "rm -rf lib *.tsbuildinfo"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
