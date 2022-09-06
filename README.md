@@ -6,7 +6,6 @@
 
 ```
 //npm.pkg.github.com/:_authToken=GITHUB_PRIVATE_TOKEN
-@neuledge:registry=https://npm.pkg.github.com
 registry=https://registry.npmjs.org
 ```
 
