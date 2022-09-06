@@ -1,14 +1,7 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "useNx": true,
   "version": "1.0.0-alpha.2",
-  "command": {
-    "publish": {
-      "registry": "https://npm.pkg.github.com"
-    }
-  },
   "npmClient": "yarn",
   "useWorkspaces": true
 }
