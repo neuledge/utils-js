@@ -1,4 +1,4 @@
-# TypeScript Common Packages
+# ESLint Packages
 
 ## Initial Setup
 
