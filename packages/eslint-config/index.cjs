@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:unicorn/recommended',
 
     // Make sure this is always the last configuration in the extends array:
     'plugin:prettier/recommended',
@@ -61,5 +62,8 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-empty-function': 'warn',
+    'unicorn/prefer-number-properties': 'off',
+    'unicorn/prevent-abbreviations': 'off',
+    'unicorn/no-null': 'off',
   },
 };
