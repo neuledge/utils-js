@@ -62,6 +62,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-empty-function': 'warn',
+    'unicorn/explicit-length-check': 'off',
     'unicorn/prefer-number-properties': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-null': 'off',
