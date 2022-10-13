@@ -14,7 +14,6 @@
     "fix:lint": "yarn run lint --fix",
     "test": "yarn compile:test && yarn run-all -m test && yarn run test:lint",
     "test:lint": "yarn run lint --max-warnings 0",
-    "test:commit": "if [[ -z \"$(git status --untracked-files=no --porcelain)\" ]]; then\n  echo \"All files committed.\"\nelse\n  echo \"Uncommitted changes found. Please Commit them first.\" && exit 1\nfi",
     "build": "yarn run compile && yarn run build:esm",
     "build:esm": "npx tsc-esm-fix --target=\"packages\" --dirnameVar=false --filenameVar=false",
     "compile": "ttsc -b",
@@ -23,7 +22,7 @@
     "compile:clean": "ttsc -b --clean",
     "release": "yarn lerna:publish --registry https://npm.pkg.github.com && yarn lerna:publish from-package",
     "lerna:publish": "yarn lerna publish",
-    "preversion": "yarn run test:commit && yarn run clean && yarn run build && yarn run test",
+    "preversion": "yarn run clean && yarn run build && yarn run test",
     "clean": "yarn run compile:clean && yarn run-all -m clean",
     "watch": "concurrently yarn:*:watch",
     "run-all": "yarn run wsrun"
