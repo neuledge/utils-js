@@ -14,6 +14,13 @@ module.exports = {
     // Make sure this is always the last configuration in the extends array:
     'plugin:prettier/recommended',
   ],
+  overrides: [
+    {
+      files: ['__test__/**', '*.test.*'],
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
+  ],
   rules: {
     'prettier/prettier': 'warn',
     'no-console': ['warn'],
