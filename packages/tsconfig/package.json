@@ -2,6 +2,15 @@
   "name": "@neuledge/tsconfig",
   "version": "1.0.0-alpha.8",
   "main": "base.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/utils-js.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
   "peerDependencies": {
     "typescript": ">= 4.5"
   }

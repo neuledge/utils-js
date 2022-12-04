@@ -11,9 +11,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "clean": "rm -rf lib *.tsbuildinfo"
-  },
   "sideEffects": false,
   "peerDependencies": {
     "eslint": ">= 8",
