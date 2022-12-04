@@ -6,6 +6,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  ignorePatterns: [
+    'dist',
+    'node_modules',
+    '__ignore__',
+    '*.codegen.ts',
+    '*.codegen.js',
+  ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',

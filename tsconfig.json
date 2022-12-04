@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {},
-  "references": [
-    { "path": "tsconfig.scripts.json" }
-  ],
-  "include": [],
-  "exclude": ["node_modules"]
-}

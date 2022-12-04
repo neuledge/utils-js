@@ -1,4 +1,4 @@
-# ESLint Packages
+# Utils Packages
 
 ## Initial Setup
 
@@ -12,13 +12,6 @@ registry=https://registry.npmjs.org
 2. Replace `GITHUB_PRIVATE_TOKEN` with a new private token created under [Github developer settings](https://github.com/settings/tokens). Make sure to give the token permission to read/write packages.
 
 3. Run `yarn && yarn bootstrap`
-
-## Adding New Packages
-
-1. Create the package folder under `./packages`
-2. Add reference for the package under root `./tsconfig.json` file (make sure it placed on the
-   right loading order)
-3. Import packages as usual over the workspace
 
 ## Release new version
 

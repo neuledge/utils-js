@@ -5,7 +5,7 @@
 1. Install the package:
 
 ```
-npm i -d @neuledge/eslint-config
+npm i -d eslint prettier @neuledge/eslint-config
 ```
 
 2. Create a `.eslintrc.json` file with the following content:
@@ -13,5 +13,14 @@ npm i -d @neuledge/eslint-config
 ```json
 {
   "extends": "@neuledge"
+}
+```
+
+3. Create a `.prettierrc.json` file with the following content:
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "all"
 }
 ```
