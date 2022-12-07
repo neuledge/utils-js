@@ -11,6 +11,10 @@
     "access": "public"
   },
   "sideEffects": false,
+  "dependencies": {
+    "ts-patch": "^2.0.2",
+    "typescript-transform-paths": "^3.4.4"
+  },
   "peerDependencies": {
     "typescript": ">= 4.5"
   }
