@@ -1,0 +1,18 @@
+{
+  "roots": ["<rootDir>"],
+  "displayName": {
+    "color": "blue",
+    "name": "types"
+  },
+  "runner": "jest-runner-tsd",
+  "testMatch": [
+    "**/__typetests__/*.ts",
+    "**/__typetests__/*.tsx",
+    "*.test-type.ts",
+    "*.test-type.tsx"
+  ],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "modulePathIgnorePatterns": ["<rootDir>/node_modules", "<rootDir>/dist"]
+}

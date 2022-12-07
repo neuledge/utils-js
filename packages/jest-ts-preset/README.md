@@ -5,13 +5,13 @@
 1. Install the package:
 
 ```
-npm i -d jest @neuledge/jest-preset
+yarn add -DW typescript jest @neuledge/jest-ts-preset
 ```
 
 2. Create a `jest.config.json` file with the following content:
 
 ```json
 {
-  "preset": "@neuledge/jest-preset"
+  "preset": "@neuledge/jest-ts-preset"
 }
 ```

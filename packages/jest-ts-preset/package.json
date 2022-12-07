@@ -1,0 +1,20 @@
+{
+  "name": "@neuledge/jest-ts-preset",
+  "version": "1.0.0-alpha.9",
+  "main": "jest-preset.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/utils-js.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "ts-jest": "^29.0.3"
+  },
+  "peerDependencies": {
+    "jest": ">= 29"
+  }
+}

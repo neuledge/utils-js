@@ -1,5 +1,5 @@
 {
-  "name": "@neuledge/jest-preset",
+  "name": "@neuledge/jest-tsd-preset",
   "version": "1.0.0-alpha.9",
   "main": "jest-preset.json",
   "repository": {
@@ -12,9 +12,10 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "ts-jest": ">= 29.0.3"
+    "jest-runner-tsd": "^4.0.0"
   },
   "peerDependencies": {
-    "jest": "^29.3.1"
+    "@tsd/typescript": ">= 4.5",
+    "jest": ">= 29"
   }
 }
