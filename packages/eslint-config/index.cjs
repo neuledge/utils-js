@@ -59,7 +59,7 @@ module.exports = {
         ],
         patterns: [
           {
-            group: ['./*/index', '@/*/index'],
+            group: ['./*/index', '../*/index', '@/*/index'],
             message:
               'Avoid importing the "index" file directly, please import the file directory instead.',
           },
