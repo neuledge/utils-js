@@ -59,6 +59,11 @@ module.exports = {
         ],
         patterns: [
           {
+            group: ['./*/index', '@/*/index'],
+            message:
+              'Avoid importing the "index" file directly, please import the file directory instead.',
+          },
+          {
             group: ['../../../*'],
             message:
               'Relative path is too long, please use package root "@" instead.',
@@ -69,8 +74,8 @@ module.exports = {
               'Please import package from "@neuledge" namespace instead.',
           },
           {
-            group: ['@neuledge/*/lib'],
-            message: 'Avoid importing the "lib" folder directly.',
+            group: ['@neuledge/*/lib', '@neuledge/*/dist'],
+            message: 'Avoid importing generated folders.',
           },
         ],
       },
