@@ -12,7 +12,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "ts-patch": "^2.0.2",
+    "ts-patch": "^2.1.0",
     "typescript-transform-paths": "^3.4.4"
   },
   "peerDependencies": {
