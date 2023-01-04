@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "base.json",
+  "display": "Next.js",
+  "compilerOptions": {
+    "target": "es5",
+    "noEmit": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  }
+}
