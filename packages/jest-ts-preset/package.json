@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/jest-ts-preset",
-  "version": "1.0.0-alpha.20",
+  "version": "1.0.0",
   "main": "jest-preset.json",
   "repository": {
     "type": "git",
