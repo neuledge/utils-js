@@ -1,0 +1,64 @@
+# Release packages when the test workflow completes successfully using the changesets/action action.
+# https://github.com/changesets/action
+
+name: Release Packages
+
+on:
+  workflow_run:
+    workflows: ['Test Packages']
+    types:
+      - completed
+    branches: ['main']
+
+permissions:
+  contents: write
+  packages: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Restore Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ runner.arch }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+          fail-on-cache-miss: true
+
+      - name: Create Release Pull Request
+        id: changesets
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Creating .npmrc
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish NPM
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: yarn release:publish
+
+      - name: Publish Github
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: yarn release:github-publish || true

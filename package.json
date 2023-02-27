@@ -14,16 +14,18 @@
     "lint": "eslint . --ext \"js,jsx,ts,tsx,mjs,cjs\"",
     "lint:fix": "yarn lint --fix",
     "lint:strict": "yarn lint --max-warnings 0",
-    "release": "yarn lerna:publish --registry https://npm.pkg.github.com && yarn lerna:publish from-package",
-    "lerna:publish": "yarn lerna publish",
-    "preversion": "yarn run test"
+    "release:version": "changeset version",
+    "release:publish": "changeset publish",
+    "release:github-publish": "YARN_REGISTRY=https://npm.pkg.github.com yarn release:publish",
+    "release:push": "git push --follow-tags",
+    "release:status": "changeset status",
+    "release": "yarn release:version && yarn release:publish && yarn release:github-publish && yarn release:push"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
-    "lerna": "^6.5.1",
     "lint-staged": "^13.1.2",
-    "nx": "^15.7.2",
     "prettier": "^2.8.4"
   },
   "lint-staged": {
