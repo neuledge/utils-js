@@ -8,5 +8,7 @@
     "@neuledge/jest-tsd-preset": "1.0.1",
     "@neuledge/tsconfig": "1.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "good-spiders-wink"
+  ]
 }
