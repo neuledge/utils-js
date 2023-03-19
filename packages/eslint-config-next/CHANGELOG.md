@@ -1,5 +1,13 @@
 # @neuledge/eslint-config-next
 
+## 1.0.1
+
+### Patch Changes
+
+- 2c9c38d: Upgrade dependencies versions
+- Updated dependencies [2c9c38d]
+  - @neuledge/eslint-config@1.0.1
+
 ## 1.0.0
 
 ### Major Changes
