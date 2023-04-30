@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
-    "@tsd/typescript": "^5.0.3",
-    "eslint": "^8.37.0",
+    "@tsd/typescript": "^5.0.4",
+    "eslint": "^8.39.0",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
     "lint-staged": "^13.2.1",
