@@ -20,7 +20,7 @@
     "prettier": ">= 2"
   },
   "dependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@babel/plugin-syntax-flow": "^7.21.4",
     "@babel/plugin-transform-react-jsx": "^7.21.0",
     "@neuledge/eslint-config": "^1.0.1",
