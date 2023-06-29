@@ -12,7 +12,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "jest-runner-tsd": "^5.0.0"
+    "jest-runner-tsd": "^6.0.0"
   },
   "peerDependencies": {
     "@tsd/typescript": ">= 4.5",

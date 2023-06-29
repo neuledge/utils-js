@@ -3243,15 +3243,15 @@ jest-resolve@^29.5.0:
     resolve.exports "^2.0.0"
     slash "^3.0.0"
 
-jest-runner-tsd@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/jest-runner-tsd/-/jest-runner-tsd-5.0.0.tgz#b388f28e7b47481e17fbc1961995b4d26cdb9cf0"
-  integrity sha512-vcjJX382rSuGUpySL+T8PuPbqKu+gv3ZeO2sdT/9vq1O+WcKH8/7q09x9CHt2lzMcKNhdhJ6tDMLClpHBildgw==
+jest-runner-tsd@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/jest-runner-tsd/-/jest-runner-tsd-6.0.0.tgz#dcc7e37562d2ea081c0696436a09e0f28572ba4f"
+  integrity sha512-lSzRoVqc/AwahlKFamdwO/R63Vze/xpCnab+FsNni8zmxyBt3e3py51mFE2UQBh2gSvEYwudOSHgX+xtmLynKw==
   dependencies:
     "@babel/code-frame" "^7.15.8"
     chalk "^4.1.2"
     create-jest-runner "^0.12.0"
-    tsd-lite "^0.7.0"
+    tsd-lite "^0.8.0"
 
 jest-runner@^29.5.0:
   version "29.5.0"
@@ -4747,10 +4747,10 @@ tsconfig-paths@^3.14.1:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tsd-lite@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/tsd-lite/-/tsd-lite-0.7.0.tgz#838b4cff49082802eb08158afe7875acd1d74d36"
-  integrity sha512-XhQ7w/RPzfjSb98LIQB1qx7yAvRV6+h5JFP4dCvd79Hbp23X8CCx4EdRAQm6faTkRdprKYvZE8kxlK6LpJp8vg==
+tsd-lite@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/tsd-lite/-/tsd-lite-0.8.0.tgz#63e0a158a17cb0503e9370f5ef9bb6b37dfe7c2f"
+  integrity sha512-wsTMCFgSs+mxM92j1G6cOSAVrwzVcqjqMwCqSs1879I18MHbJQn8IpDwr3cTN+ulTqCmfwlBpaJ4y+08JiyG5Q==
 
 tslib@^1.8.1:
   version "1.14.1"
