@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/eslint-config-next",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "commonjs",
   "main": "index.cjs",
   "repository": {
@@ -23,7 +23,7 @@
     "@babel/core": "^7.22.8",
     "@babel/plugin-syntax-flow": "^7.22.5",
     "@babel/plugin-transform-react-jsx": "^7.22.5",
-    "@neuledge/eslint-config": "^1.0.1",
+    "@neuledge/eslint-config": "^1.0.2",
     "eslint-config-next": "^13.4.9",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
