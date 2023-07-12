@@ -1,5 +1,11 @@
 # @neuledge/jest-tsd-preset
 
+## 1.0.2
+
+### Patch Changes
+
+- de3402b: versions update
+
 ## 1.0.1
 
 ### Patch Changes

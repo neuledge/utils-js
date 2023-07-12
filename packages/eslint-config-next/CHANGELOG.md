@@ -1,5 +1,13 @@
 # @neuledge/eslint-config-next
 
+## 1.0.2
+
+### Patch Changes
+
+- de3402b: versions update
+- Updated dependencies [de3402b]
+  - @neuledge/eslint-config@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
