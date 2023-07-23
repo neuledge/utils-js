@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "commonjs",
   "main": "index.cjs",
   "repository": {
@@ -22,9 +22,9 @@
     "@typescript-eslint/parser": "^6.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-unicorn": "^47.0.0"
+    "eslint-plugin-unicorn": "^48.0.0"
   }
 }
