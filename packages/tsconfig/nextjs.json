@@ -5,6 +5,7 @@
   "compilerOptions": {
     "target": "es5",
     "noEmit": true,
+    "moduleResolution": "bundler",
     "jsx": "preserve",
     "incremental": true,
     "allowJs": true,

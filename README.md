@@ -1,6 +1,19 @@
 # Utils Packages
 
-## Initial Setup
+You can find all the utils packages under the `packages` folder. Each package is a separate npm package and can be installed individually.
+
+## Packages
+
+| Package | Version | Description |
+| --- | --- | --- |
+| [@neuledge/tsconfig](packages/tsconfig) | [![npm version](https://badge.fury.io/js/%40neuledge%2Ftsconfig.svg)](https://badge.fury.io/js/%40neuledge%2Ftsconfig) | This package provides a base TypeScript configuration for Neuledge packages. |
+| [@neuledge/eslint-config](packages/eslint-config) | [![npm version](https://badge.fury.io/js/%40neuledge%2Feslint-config.svg)](https://badge.fury.io/js/%40neuledge%2Feslint-config) | This package provides a base ESLint configuration for Neuledge packages. |
+| [@neuledge/eslint-config-next](packages/eslint-config-next) | [![npm version](https://badge.fury.io/js/%40neuledge%2Feslint-config-next.svg)](https://badge.fury.io/js/%40neuledge%2Feslint-config-next) | This package provides a base ESLint configuration for Neuledge Next.js projects. |
+| [@neuledge/jest-ts-preset](packages/jest-ts-preset) | [![npm version](https://badge.fury.io/js/%40neuledge%2Fjest-ts-preset.svg)](https://badge.fury.io/js/%40neuledge%2Fjest-ts-preset) | This package provides a base Jest configuration for Neuledge TypeScript projects. |
+| [@neuledge/jest-tsd-preset](packages/jest-tsd-preset) | [![npm version](https://badge.fury.io/js/%40neuledge%2Fjest-tsd-preset.svg)](https://badge.fury.io/js/%40neuledge%2Fjest-tsd-preset) | This package provides a base Jest configuration for Neuledge TypeScript projects with type checking. |
+
+
+## Local development
 
 1. Create a new `.npmrc` file under the root folder with the following content:
 
