@@ -1,5 +1,11 @@
 # @neuledge/tsconfig
 
+## 2.1.0
+
+### Minor Changes
+
+- 06c987f: Better support next.js apps
+
 ## 2.1.0-next-tsconfig.0
 
 ### Minor Changes

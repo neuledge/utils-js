@@ -1,5 +1,16 @@
 # @neuledge/eslint-config-next
 
+## 1.1.0
+
+### Minor Changes
+
+- d17cb57: Support prettier v3
+
+### Patch Changes
+
+- Updated dependencies [d17cb57]
+  - @neuledge/eslint-config@1.1.0
+
 ## 1.0.2
 
 ### Patch Changes
