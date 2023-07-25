@@ -1,5 +1,7 @@
 # TypeScript Config
 
+This package provides a base TypeScript configuration for Neuledge packages.
+
 ## Initial Setup
 
 1. Install the package:
@@ -25,7 +27,7 @@ yarn add -DW rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
 
 3. Create a `tsup.config.json` file with the following content:
 
-````json
+```json
 {
   "entry": ["src/index.ts"],
   "format": ["esm", "cjs"],
@@ -34,7 +36,7 @@ yarn add -DW rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
 }
 ```
 
-3. Add the following scripts to your `package.json`:
+4. Add the following scripts to your `package.json`:
 
 ```json
 {
@@ -45,13 +47,13 @@ yarn add -DW rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
 }
 ````
 
-4. Add the following to your `.gitignore`:
+5. Add the following to your `.gitignore`:
 
 ```
 dist
 ```
 
-5. Add the following to your `.npmignore`:
+6. Add the following to your `.npmignore`:
 
 ```
 /*
@@ -60,4 +62,25 @@ dist
 !/dist/*.mjs
 !/dist/*.mjs.map
 !/dist/**/*.d.ts
+```
+
+## Next.js Setup
+
+If you're using a [Next.js](https://nextjs.org/) project, you should follow the instructions below instead of the ones above:
+
+1. Setup new project:
+
+```
+yarn create next-app
+```
+
+2. Replace the `tsconfig.json` file with the following content:
+
+```json
+{
+  "extends": "@neuledge/tsconfig/next.json",
+  "compilerOptions": {},
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "**/__ignore__/**"]
+}
 ```

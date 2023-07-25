@@ -5,11 +5,17 @@
   "compilerOptions": {
     "target": "es5",
     "noEmit": true,
+    "moduleResolution": "bundler",
     "jsx": "preserve",
     "incremental": true,
     "allowJs": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   }
 }
