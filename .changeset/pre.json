@@ -1,0 +1,14 @@
+{
+  "mode": "exit",
+  "tag": "next-tsconfig",
+  "initialVersions": {
+    "@neuledge/eslint-config": "1.0.2",
+    "@neuledge/eslint-config-next": "1.0.2",
+    "@neuledge/jest-ts-preset": "1.0.1",
+    "@neuledge/jest-tsd-preset": "1.0.2",
+    "@neuledge/tsconfig": "2.0.0"
+  },
+  "changesets": [
+    "itchy-grapes-reply"
+  ]
+}
