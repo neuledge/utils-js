@@ -68,18 +68,30 @@ dist
 
 If you're using a [Next.js](https://nextjs.org/) project, you should follow the instructions below instead of the ones above:
 
-1. Setup new project:
+1. Setup new project with TypeScript:
 
 ```
 yarn create next-app
 ```
 
-2. Replace the `tsconfig.json` file with the following content:
+2. Install the package:
+
+```
+yarn add -DW @neuledge/tsconfig
+```
+
+3. Replace the `tsconfig.json` file with the following content:
 
 ```json
 {
-  "extends": "@neuledge/tsconfig/next.json",
-  "compilerOptions": {},
+  "extends": "@neuledge/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "**/__ignore__/**"]
 }

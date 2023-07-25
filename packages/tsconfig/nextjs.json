@@ -11,11 +11,6 @@
     "allowJs": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strictNullChecks": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "strictNullChecks": true
   }
 }
