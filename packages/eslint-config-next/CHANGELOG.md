@@ -1,5 +1,13 @@
 # @neuledge/eslint-config-next
 
+## 1.1.1
+
+### Patch Changes
+
+- 7ee2fe3: Add instructions for husky install
+- Updated dependencies [7ee2fe3]
+  - @neuledge/eslint-config@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
