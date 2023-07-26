@@ -45,7 +45,7 @@ yarn add -DW rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
     "build": "rimraf --glob dist/*.{js,js.map,mjs,mjs.map} && tsup"
   }
 }
-````
+```
 
 5. Add the following to your `.gitignore`:
 
@@ -86,6 +86,8 @@ yarn add -DW @neuledge/tsconfig
 {
   "extends": "@neuledge/tsconfig/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
     "plugins": [
       {
         "name": "next"
