@@ -7,9 +7,12 @@
     "@neuledge/jest-ts-preset": "1.0.1",
     "@neuledge/jest-tsd-preset": "1.0.2",
     "@neuledge/tsconfig": "2.1.0",
-    "@neuledge/units": "0.1.0-alpha.17"
+    "@neuledge/units": "0.1.0-alpha.17",
+    "@neuledge/env": "0.1.0-alpha.17",
+    "@neuledge/process": "0.1.0-alpha.17"
   },
   "changesets": [
+    "fuzzy-rules-live",
     "late-mayflies-knock",
     "light-stingrays-camp",
     "warm-panthers-wave"

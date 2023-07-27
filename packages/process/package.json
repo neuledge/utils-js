@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/process",
-  "version": "0.1.0-alpha.17",
+  "version": "1.0.0-alpha.18",
   "description": "A collection of useful functions for running node.js process.",
   "keywords": [
     "node",
@@ -47,9 +47,9 @@
     "@types/node": "^18.0.0"
   },
   "devDependencies": {
-    "@neuledge/env": "^0.1.0-alpha.17"
+    "@neuledge/env": "^1.0.0-alpha.18"
   },
   "peerDependencies": {
-    "@neuledge/env": "<= 2.0.0"
+    "@neuledge/env": "<=1.0.0-alpha.18"
   }
 }
