@@ -1,5 +1,11 @@
 # @neuledge/tsconfig
 
+## 2.1.2-alpha.0
+
+### Patch Changes
+
+- 65d5174: fix build release
+
 ## 2.1.1
 
 ### Patch Changes
