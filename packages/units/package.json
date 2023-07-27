@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/units",
-  "version": "1.0.0-alpha.18",
+  "version": "1.0.0-alpha.19",
   "description": "Set of common constants and functions to use and convert units.",
   "keywords": [
     "units",
