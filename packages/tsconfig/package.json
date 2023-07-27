@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/tsconfig",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "base.json",
   "repository": {
     "type": "git",
