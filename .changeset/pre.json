@@ -1,0 +1,13 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@neuledge/eslint-config": "1.1.1",
+    "@neuledge/eslint-config-next": "1.1.1",
+    "@neuledge/jest-ts-preset": "1.0.1",
+    "@neuledge/jest-tsd-preset": "1.0.2",
+    "@neuledge/tsconfig": "2.1.0",
+    "@neuledge/units": "0.1.0-alpha.17"
+  },
+  "changesets": []
+}

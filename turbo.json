@@ -1,0 +1,34 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "generate": {
+      "dependsOn": ["^build", "^types"],
+      "inputs": ["**/*.graphql", "**/*.gql", "**/*.states"],
+      "outputs": ["src/**/*.codegen.ts"]
+    },
+    "types": {
+      "dependsOn": ["^types", "generate"],
+      "inputs": ["src/**/*.ts", "src/**/*.tsx"],
+      "outputs": ["dist/**/*.d.ts", "dist/**/*.d.ts.map"]
+    },
+    "build": {
+      "dependsOn": ["^build", "^types", "generate"],
+      "inputs": ["src/**"],
+      "outputs": [
+        "dist/**/*.js",
+        "dist/**/*.js.map",
+        "dist/**/*.mjs",
+        "dist/**/*.mjs.map"
+      ]
+    },
+    "test": {
+      "dependsOn": ["^test", "build", "types"],
+      "inputs": ["src/**", "test/**"]
+    },
+    "lint": {},
+    "lint:strict": {},
+    "deploy": {
+      "dependsOn": ["test", "lint:strict"]
+    }
+  }
+}

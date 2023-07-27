@@ -12,7 +12,7 @@ pids
 *.pid.lock
 
 # build files
-lib
+dist/
 /.build
 *.tsbuildinfo
 
@@ -72,6 +72,9 @@ typings/
 
 # next.js build output
 .next
+
+# turbo repo
+.turbo
 
 # scripts build files
 /*.js

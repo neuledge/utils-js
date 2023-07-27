@@ -12,7 +12,8 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf lib *.tsbuildinfo"
+    "lint": "eslint . --ext \"js,jsx,ts,tsx,mjs,cjs\"",
+    "lint:strict": "yarn lint --max-warnings 0"
   },
   "sideEffects": false,
   "peerDependencies": {

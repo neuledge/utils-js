@@ -1,0 +1,40 @@
+{
+  "name": "@neuledge/units",
+  "version": "0.1.0-alpha.17",
+  "description": "Set of common constants and functions to use and convert units.",
+  "keywords": [
+    "units",
+    "convert",
+    "time",
+    "size",
+    "numbers",
+    "bytes",
+    "currency",
+    "timers"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/utils-js.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "types": "rimraf --glob dist/*.{d.ts,d.ts.map} dist/**/*.{d.ts,d.ts.map} && tsc --emitDeclarationOnly && tsc-alias",
+    "build": "rimraf --glob dist/*.{js,js.map,mjs,mjs.map} && tsup",
+    "test": "jest",
+    "lint": "eslint . --ext \"js,jsx,ts,tsx,mjs,cjs\"",
+    "lint:strict": "yarn lint --max-warnings 0"
+  }
+}

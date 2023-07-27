@@ -11,6 +11,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "lint": "eslint . --ext \"js,jsx,ts,tsx,mjs,cjs\"",
+    "lint:strict": "yarn lint --max-warnings 0"
+  },
   "sideEffects": false,
   "peerDependencies": {
     "eslint": ">= 8",
