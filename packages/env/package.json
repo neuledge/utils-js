@@ -1,0 +1,53 @@
+{
+  "name": "@neuledge/env",
+  "version": "0.1.0-alpha.17",
+  "description": "A simple environment variable loader for Node.js and the browser",
+  "keywords": [
+    "env",
+    "environment",
+    "variables",
+    "dotenv",
+    "browser",
+    "node",
+    "process"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/browser.js",
+  "types": "./dist/index.d.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./root": {
+      "require": "./dist/root.js",
+      "import": "./dist/root.mjs",
+      "types": "./dist/root.d.ts"
+    },
+    "./browser": {
+      "require": "./dist/browser.js",
+      "import": "./dist/browser.mjs",
+      "types": "./dist/browser.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuledge/utils-js.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "types": "rimraf --glob dist/*.{d.ts,d.ts.map} dist/**/*.{d.ts,d.ts.map} && tsc --emitDeclarationOnly && tsc-alias",
+    "build": "rimraf --glob dist/*.{js,js.map,mjs,mjs.map} && tsup",
+    "test": "jest",
+    "lint": "eslint . --ext \"js,jsx,ts,tsx,mjs,cjs\"",
+    "lint:strict": "yarn lint --max-warnings 0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
