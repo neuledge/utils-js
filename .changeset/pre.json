@@ -9,5 +9,7 @@
     "@neuledge/tsconfig": "2.1.0",
     "@neuledge/units": "0.1.0-alpha.17"
   },
-  "changesets": []
+  "changesets": [
+    "warm-panthers-wave"
+  ]
 }
