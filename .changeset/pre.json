@@ -9,9 +9,11 @@
     "@neuledge/tsconfig": "2.1.0",
     "@neuledge/units": "0.1.0-alpha.17",
     "@neuledge/env": "0.1.0-alpha.17",
-    "@neuledge/process": "0.1.0-alpha.17"
+    "@neuledge/process": "0.1.0-alpha.17",
+    "@neuledge/id": "0.1.0-alpha.19"
   },
   "changesets": [
+    "four-rice-divide",
     "fuzzy-rules-live",
     "late-mayflies-knock",
     "light-stingrays-camp",
