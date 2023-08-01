@@ -14,6 +14,7 @@ You can find all the utils packages under the `packages` folder. Each package is
 | [@neuledge/units](packages/units)                           | [![npm version](https://badge.fury.io/js/%40neuledge%2Funits.svg)](https://badge.fury.io/js/%40neuledge%2Funits)                           | This package provides set of constants for commonly used units such as `DAY_MS` and `SIZE_MB`.         |
 | [@neuledge/env](packages/env)                               | [![npm version](https://badge.fury.io/js/%40neuledge%2Fenv.svg)](https://badge.fury.io/js/%40neuledge%2Fenv)                               | This package provides a simple way to access environment variables both in the browser and in Node.js. |
 | [@neuledge/process](packages/process)                       | [![npm version](https://badge.fury.io/js/%40neuledge%2Fprocess.svg)](https://badge.fury.io/js/%40neuledge%2Fprocess)                       | This package provides a simple way manage Node.js process lifecycle.                                   |
+| [@neuledge/id](packages/id)                                 | [![npm version](https://badge.fury.io/js/%40neuledge%2Fid.svg)](https://badge.fury.io/js/%40neuledge%2Fid)                                 | This package provides a globally unique identifier based on the upcoming UUIDv7 standard.              |
 
 ## Local development
 
