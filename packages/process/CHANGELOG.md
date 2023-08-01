@@ -1,5 +1,12 @@
 # @neuledge/process
 
+## 1.0.0-alpha.19
+
+### Patch Changes
+
+- Updated dependencies
+  - @neuledge/env@1.0.0-alpha.19
+
 ## 1.0.0-alpha.18
 
 ### Major Changes

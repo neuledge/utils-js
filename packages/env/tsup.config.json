@@ -1,5 +1,5 @@
 {
-  "entry": ["src/index.ts"],
+  "entry": ["src/index.ts", "src/browser.ts", "src/root.ts"],
   "format": ["esm", "cjs"],
   "sourcemap": true,
   "shims": true

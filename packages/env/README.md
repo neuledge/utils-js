@@ -39,5 +39,11 @@ import { env } from '@neuledge/env/root';
 Object.extend(env, { ... });
 ```
 
-This is useful for example when you need to set environment variables in browser
-environments.
+This is useful when you need to set environment variables in browser
+environments and then load the updated `env` variable separately via:
+
+```ts
+import { env } from '@neuledge/env/browser';
+```
+
+For more details, see [Next.js Runtime Configuration](https://nextjs.org/docs/app/api-reference/next-config-js/runtime-configuration).
