@@ -1,5 +1,15 @@
 # @neuledge/env
 
+## 1.0.0
+
+### Major Changes
+
+- 89efc77: add env and process packages
+
+### Patch Changes
+
+- b17fe1c: fix browser and root entry import
+
 ## 1.0.0-alpha.19
 
 ### Patch Changes

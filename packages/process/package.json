@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/process",
-  "version": "1.0.0-alpha.19",
+  "version": "1.0.0",
   "description": "A collection of useful functions for running node.js process.",
   "keywords": [
     "node",
@@ -43,13 +43,13 @@
     "lint:strict": "yarn lint --max-warnings 0"
   },
   "dependencies": {
-    "@neuledge/units": "^1.0.0-alpha.19",
+    "@neuledge/units": "^1.0.0",
     "@types/node": "^18.0.0"
   },
   "devDependencies": {
-    "@neuledge/env": "^1.0.0-alpha.19"
+    "@neuledge/env": "^1.0.0"
   },
   "peerDependencies": {
-    "@neuledge/env": "<=1.0.0-alpha.19"
+    "@neuledge/env": "<=1.0.0"
   }
 }

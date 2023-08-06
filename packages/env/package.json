@@ -1,6 +1,6 @@
 {
   "name": "@neuledge/env",
-  "version": "1.0.0-alpha.19",
+  "version": "1.0.0",
   "description": "A simple environment variable loader for Node.js and the browser",
   "keywords": [
     "env",
