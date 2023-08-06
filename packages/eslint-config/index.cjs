@@ -80,6 +80,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-empty-function': 'warn',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'unicorn/explicit-length-check': 'off',
     'unicorn/prefer-number-properties': 'off',
     'unicorn/prevent-abbreviations': 'off',
