@@ -1,5 +1,12 @@
 # @neuledge/eslint-config-next
 
+## 1.1.2-alpha.0
+
+### Patch Changes
+
+- Updated dependencies [047574c]
+  - @neuledge/eslint-config@1.2.0-alpha.0
+
 ## 1.1.1
 
 ### Patch Changes

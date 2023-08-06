@@ -1,5 +1,11 @@
 # @neuledge/eslint-config
 
+## 1.2.0-alpha.0
+
+### Minor Changes
+
+- 047574c: Enfore "no-unused-vars" as warning
+
 ## 1.1.1
 
 ### Patch Changes
