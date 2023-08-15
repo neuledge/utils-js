@@ -7,6 +7,10 @@ export const IS_NODE_ENV_PROD = NODE_ENV === 'production';
 export const APP_ENV = env.APP_ENV ?? (IS_NODE_ENV_PROD ? 'unknown' : 'local');
 
 export const IS_LOCAL = APP_ENV === 'local';
+
+/**
+ * @deprecated Use APP_ENV instead
+ */
 export const IS_LIVE = APP_ENV === 'live';
 
 if (!IS_NODE_ENV_PROD && !IS_LOCAL) {

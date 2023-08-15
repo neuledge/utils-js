@@ -76,13 +76,11 @@ printError('we got an error', new Error('Something went wrong!'), 'warn', {
 ### Environment variables
 
 ```ts
-import { APP_ENV, IS_LIVE } from '@neuledge/process';
+import { APP_ENV } from '@neuledge/process';
 
-if (APP_ENV === 'staging') {
+if (IS_LOCAL) {
   // Do something
-}
-
-if (IS_LIVE) {
-  // Do something
+} else if (APP_ENV === 'prod') {
+  // Do something else
 }
 ```
