@@ -1,5 +1,11 @@
 # @neuledge/process
 
+## 1.1.0
+
+### Minor Changes
+
+- 1456e34: Deprecate IS_LIVE
+
 ## 1.0.0
 
 ### Major Changes
