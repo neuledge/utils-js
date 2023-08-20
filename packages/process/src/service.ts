@@ -134,6 +134,8 @@ export const initService = async (
   let terminate = async () => {
     terminate = () => Promise.resolve();
 
+    process.stdin.pause(); // release stdin
+
     await end().catch((error) => printError(`Error on close resource`, error));
 
     printServiceTerminated(Date.now() - startTime);
