@@ -1,5 +1,11 @@
 # @neuledge/process
 
+## 1.1.1
+
+### Patch Changes
+
+- 39dbc92: Fix stdin from blocking the process on exit
+
 ## 1.1.0
 
 ### Minor Changes
