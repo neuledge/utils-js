@@ -1,5 +1,6 @@
 import { elapsedTimeStr } from '@neuledge/units';
 import { APP_ENV, NODE_ENV } from './process';
+import { inspect } from 'node:util';
 
 export interface Logger {
   debug?(message: unknown, ...args: unknown[]): void;
@@ -63,10 +64,20 @@ export const printLog = (
   severity: LogSeverity = 'info',
   additionalVars?: Record<string, unknown>,
 ): void => {
-  logger[severity]?.(
-    message,
-    additionalVars ? JSON.stringify(additionalVars) : '',
-  );
+  let varsStr;
+  if (additionalVars) {
+    try {
+      varsStr = JSON.stringify(additionalVars);
+    } catch {
+      try {
+        varsStr = inspect(additionalVars);
+      } catch {
+        varsStr = '';
+      }
+    }
+  }
+
+  logger[severity]?.(message, varsStr ?? '');
 };
 
 export const printError = (
