@@ -1,5 +1,11 @@
 # @neuledge/process
 
+## 1.1.2
+
+### Patch Changes
+
+- b0aa3b5: Improve support for logging of circular structures
+
 ## 1.1.1
 
 ### Patch Changes
