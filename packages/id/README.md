@@ -25,7 +25,7 @@ const userId = UserId.generate(); // user_2x4y6z8a0b1c2d3e4f5g6h7j8k
 const id: UserId = userId;
 
 // Validate an id
-const isValid = UserId.isValid(userId); // true
+const isValid = UserId.is(userId); // true
 
 // Get the prefix and suffix of an id
 const prefix = UserId.prefix; // user

@@ -1,3 +1,5 @@
+/* eslint-disable max-lines-per-function */
+
 import { Id } from './id';
 
 describe('id', () => {
@@ -14,6 +16,21 @@ describe('id', () => {
 
       const generated = id.generate();
       expect(generated).toMatch(/^test_/);
+    });
+  });
+
+  describe('id.is()', () => {
+    it('should return true for a valid id', () => {
+      const id = new Id('test');
+
+      expect(id.is('test_2x4y6z8a0b1c2d3e4f5g6h7j8k')).toBe(true);
+    });
+
+    it('should return false for an invalid id', () => {
+      const id = new Id('test');
+
+      expect(id.is('foo_2x4y6z8a0b1c2d3e4f5g6h7j8k')).toBe(false);
+      expect(id.is('test_123')).toBe(false);
     });
   });
 
