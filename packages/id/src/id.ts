@@ -9,7 +9,7 @@ export class Id<Prefix extends string> {
     return typeid(this.prefix).toString() as IdType<Prefix>;
   }
 
-  isValid(id: unknown): boolean {
+  is(id: unknown): id is IdType<Prefix> {
     if (typeof id !== 'string') {
       return false;
     }
@@ -20,6 +20,13 @@ export class Id<Prefix extends string> {
     } catch {
       return false;
     }
+  }
+
+  /**
+   * @deprecated Use `is` instead
+   */
+  isValid(id: unknown): boolean {
+    return this.is(id);
   }
 
   // TypeID
