@@ -3,9 +3,10 @@
   "extends": "./base.json",
   "display": "Next.js",
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES5",
     "noEmit": true,
-    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "jsx": "preserve",
     "incremental": true,
     "allowJs": true,
