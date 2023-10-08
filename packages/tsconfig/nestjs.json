@@ -1,18 +1,20 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./base.json",
-  "display": "Next.js",
+  "display": "Nest.js",
   "compilerOptions": {
     "target": "ES5",
     "noEmit": true,
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "jsx": "preserve",
     "incremental": true,
     "allowJs": true,
-    "downlevelIteration": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }

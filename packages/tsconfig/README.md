@@ -2,6 +2,12 @@
 
 This package provides a base TypeScript configuration for Neuledge packages.
 
+## Config Files
+
+- [`base.json`](#initial-setup): Base TypeScript configuration.
+- [`nestjs.json`](#nextjs-setup): TypeScript configuration for Nest.js projects.
+- [`nextjs.json`](#nestjs-setup): TypeScript configuration for Next.js projects.
+
 ## Initial Setup
 
 1. Install the package:
@@ -96,5 +102,29 @@ yarn add -DW @neuledge/tsconfig
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "**/__ignore__/**"]
+}
+```
+
+## Nest.js Setup
+
+If you're using a [Nest.js](https://nestjs.com/) project, you should follow the instructions below instead of the ones above:
+
+1. Install the package:
+
+```
+yarn add -DW @neuledge/tsconfig
+```
+
+2. Replace the `tsconfig.json` file with the following content:
+
+```json
+{
+  "extends": "@neuledge/tsconfig/nestjs.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./",
+    "outDir": "./dist"
+  },
+  "exclude": ["dist", "node_modules"]
 }
 ```
