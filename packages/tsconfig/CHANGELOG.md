@@ -1,5 +1,12 @@
 # @neuledge/tsconfig
 
+## 3.0.0
+
+### Major Changes
+
+- f9da52e: Update typescript module resolution to "NodeNext"
+- 72046ce: Support Nest.js and update TSConfig for TS v5
+
 ## 2.1.2
 
 ### Patch Changes
