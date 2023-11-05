@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@neuledge/units": "^1.0.0",
-    "@types/node": "^20.6.3"
+    "@types/node": "^20.8.9"
   },
   "devDependencies": {
     "@neuledge/env": "^1.0.0"
