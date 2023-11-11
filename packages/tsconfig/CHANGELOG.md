@@ -1,5 +1,11 @@
 # @neuledge/tsconfig
 
+## 3.1.0
+
+### Minor Changes
+
+- 46709bb: Match TypeScript config of T3 Stack
+
 ## 3.0.0
 
 ### Major Changes
