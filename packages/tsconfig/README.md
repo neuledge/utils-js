@@ -94,13 +94,20 @@ yarn add -DW @neuledge/tsconfig
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [{ "name": "next" }]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules", "**/__ignore__/**"]
 }
 ```
