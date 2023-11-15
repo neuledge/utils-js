@@ -1,5 +1,11 @@
 # @neuledge/id
 
+## 1.2.0
+
+### Minor Changes
+
+- aa79158: Support typeof `.type` shortcut
+
 ## 1.1.0
 
 ### Minor Changes
