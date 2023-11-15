@@ -15,8 +15,8 @@ yarn add @neuledge/id
 ```js
 import { Id, IdType } from '@neuledge/id';
 
-type UserId = IdType<'user'>;
 const UserId = new Id('user');
+type UserId = typeof UserId.type;
 
 // Generate a new id
 const userId = UserId.generate(); // user_2x4y6z8a0b1c2d3e4f5g6h7j8k

@@ -1,12 +1,33 @@
 /* eslint-disable max-lines-per-function */
 
-import { Id } from './id';
+import { Id, IdType } from './id';
 
 describe('id', () => {
   describe('new Id()', () => {
     it('should create a new Id instance', () => {
       const id = new Id('test');
       expect(id).toBeInstanceOf(Id);
+    });
+  });
+
+  describe('id.prefix', () => {
+    it('should match the prefix', () => {
+      const id = new Id('test');
+      expect(id.prefix).toBe('test');
+    });
+  });
+
+  describe('id.type', () => {
+    it('should match the `IdType<>`', () => {
+      const id = new Id('test');
+      expect<IdType<'test'>>(id.type).toContain(`${id.prefix}_`);
+    });
+
+    it('should match the `typeof`', () => {
+      const id = new Id('test');
+      const generated = id.generate();
+
+      expect<typeof id.type>(generated).toContain(`${id.prefix}_`);
     });
   });
 

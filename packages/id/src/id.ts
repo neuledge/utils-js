@@ -3,7 +3,11 @@ import { TypeID, typeid } from 'typeid-js';
 export type IdType<Prefix extends string> = `${Prefix}_${string}`;
 
 export class Id<Prefix extends string> {
-  constructor(public readonly prefix: Prefix) {}
+  public readonly type: IdType<Prefix>;
+
+  constructor(public readonly prefix: Prefix) {
+    this.type = `${this.prefix}_`;
+  }
 
   generate(): IdType<Prefix> {
     return typeid(this.prefix).toString() as IdType<Prefix>;
