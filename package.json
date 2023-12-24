@@ -26,19 +26,19 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@tsd/typescript": "^5.3.2",
-    "@types/jest": "^29.5.10",
+    "@tsd/typescript": "^5.3.3",
+    "@types/jest": "^29.5.11",
     "@types/node": "^20.10.1",
     "eslint": "^8.55.0",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "rimraf": "^5.0.5",
     "tsc-alias": "^1.8.8",
     "tsup": "^8.0.1",
     "turbo": "^1.11.2",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "eslint"
