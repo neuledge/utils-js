@@ -5,7 +5,7 @@
 1. Install the package:
 
 ```
-yarn add -DW eslint husky lint-staged prettier @neuledge/eslint-config
+pnpm add -D eslint husky lint-staged prettier @neuledge/eslint-config
 ```
 
 2. Create a `.eslintrc.json` file with the following content:
@@ -29,11 +29,10 @@ yarn add -DW eslint husky lint-staged prettier @neuledge/eslint-config
 ```json
 {
   "scripts": {
-    "prepare": "husky install || echo \"skip husky\"",
-    "fix": "yarn lint:fix",
+    "fix": "pnpm lint:fix",
     "lint": "eslint . --ext \"js,ts,mjs,cjs\"",
-    "lint:fix": "yarn lint --fix",
-    "lint:strict": "yarn lint --max-warnings 0"
+    "lint:fix": "pnpm lint --fix",
+    "lint:strict": "pnpm lint --max-warnings 0"
   }
 }
 ```
@@ -51,8 +50,8 @@ yarn add -DW eslint husky lint-staged prettier @neuledge/eslint-config
 6. Install and configure husky:
 
 ```bash
-yarn prepare
-yarn husky add .husky/commit-msg 'NODE_OPTIONS="--max_old_space_size=4096" npx --no-save lint-staged'
+pnpm husky init
+echo 'NODE_OPTIONS="--max_old_space_size=4096" npx --no-save lint-staged' > .husky/pre-commit
 ```
 
 ## Usage
@@ -60,13 +59,13 @@ yarn husky add .husky/commit-msg 'NODE_OPTIONS="--max_old_space_size=4096" npx -
 ### Linting
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 ### Fixing Linting Errors
 
 ```bash
-yarn fix
+pnpm fix
 ```
 
 ### Strict Linting
@@ -74,5 +73,5 @@ yarn fix
 (Best used in CI)
 
 ```bash
-yarn lint:strict
+pnpm lint:strict
 ```

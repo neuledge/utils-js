@@ -13,7 +13,7 @@ This package provides a base TypeScript configuration for Neuledge packages.
 1. Install the package:
 
 ```
-yarn add -DW rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
+pnpm add -D rimraf typescript @types/node tsc-alias tsup @neuledge/tsconfig
 ```
 
 2. Create a `tsconfig.json` file with the following content:
@@ -77,13 +77,13 @@ If you're using a [Next.js](https://nextjs.org/) project, you should follow the 
 1. Setup new project with TypeScript:
 
 ```
-yarn create next-app
+pnpm create next-app
 ```
 
 2. Install the package:
 
 ```
-yarn add -DW @neuledge/tsconfig
+pnpm add -D @neuledge/tsconfig
 ```
 
 3. Replace the `tsconfig.json` file with the following content:
@@ -119,7 +119,7 @@ If you're using a [Nest.js](https://nestjs.com/) project, you should follow the 
 1. Install the package:
 
 ```
-yarn add -DW @neuledge/tsconfig
+pnpm add -D @neuledge/tsconfig
 ```
 
 2. Replace the `tsconfig.json` file with the following content:
