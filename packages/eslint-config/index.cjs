@@ -38,7 +38,7 @@ module.exports = {
     ],
     'max-lines-per-function': [
       'warn',
-      { max: 50, skipBlankLines: true, skipComments: true },
+      { max: 70, skipBlankLines: true, skipComments: true },
     ],
     'prefer-arrow-callback': 'warn',
     'arrow-body-style': 'warn',
