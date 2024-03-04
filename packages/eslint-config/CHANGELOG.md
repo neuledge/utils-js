@@ -1,5 +1,11 @@
 # @neuledge/eslint-config
 
+## 1.3.0
+
+### Minor Changes
+
+- ba0abd2: update max-lines-per-function to 70 lines
+
 ## 1.2.0
 
 ### Minor Changes
