@@ -1,5 +1,11 @@
 # @neuledge/tsconfig
 
+## 3.2.0
+
+### Minor Changes
+
+- 010d64d: enable noUncheckedIndexedAccess
+
 ## 3.1.0
 
 ### Minor Changes
