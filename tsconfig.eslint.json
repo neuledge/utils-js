@@ -1,4 +1,4 @@
 {
   "extends": "@neuledge/tsconfig/base.json",
-  "include": ["**/*.cjs", "**/*.mjs", "**/*.js", "**/*.jsx"]
+  "include": ["**/.*.cjs", "**/*.cjs", "**/*.mjs", "**/*.js", "**/*.jsx"]
 }
