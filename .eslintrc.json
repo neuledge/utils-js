@@ -1,3 +1,6 @@
 {
-  "extends": "@neuledge"
+  "extends": "@neuledge",
+  "parserOptions": {
+    "project": ["./tsconfig.eslint.json", "./packages/*/tsconfig.json"]
+  }
 }
