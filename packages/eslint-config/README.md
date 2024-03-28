@@ -12,7 +12,10 @@ pnpm add -D eslint husky lint-staged prettier @neuledge/eslint-config
 
 ```json
 {
-  "extends": "@neuledge"
+  "extends": "@neuledge",
+  "parserOptions": {
+    "project": ["./tsconfig.eslint.json", "./packages/*/tsconfig.json"]
+  }
 }
 ```
 
