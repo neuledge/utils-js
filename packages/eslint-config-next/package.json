@@ -21,9 +21,9 @@
     "prettier": ">= 3"
   },
   "dependencies": {
-    "@babel/core": "^7.24.6",
-    "@babel/plugin-syntax-flow": "^7.24.6",
-    "@babel/plugin-transform-react-jsx": "^7.24.6",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-syntax-flow": "^7.24.7",
+    "@babel/plugin-transform-react-jsx": "^7.24.7",
     "@neuledge/eslint-config": "^1.1.1",
     "eslint-config-next": "^14.2.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
