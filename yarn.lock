@@ -5682,10 +5682,10 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typeid-js@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/typeid-js/-/typeid-js-0.5.0.tgz#64ba9859071f0da767412cffe8d42bd6c8417c41"
-  integrity sha512-wgEWd5Ejd2gvb68y+5wWcjZmrJqPFX4rMV6Fi6CN5luzD9Wjaf9v1g3qfpGzaWahXcmlnA0cCPDP4Kr0F630xA==
+typeid-js@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/typeid-js/-/typeid-js-0.7.0.tgz#2a36fe77013fd5b78f9e27f20cc403acf2f33a9f"
+  integrity sha512-eNkOAh7Z7SIGwgdg2BM5n79QhJqHMNMm6kWYJAsIf3OqBLDEO5UeNLknBXh9+U6zel1zC5z2l0cwCswIy+GWyw==
   dependencies:
     uuidv7 "^0.6.2"
 

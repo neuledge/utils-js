@@ -37,6 +37,6 @@
     "lint:strict": "yarn lint --max-warnings 0"
   },
   "dependencies": {
-    "typeid-js": "^0.5.0"
+    "typeid-js": "^0.7.0"
   }
 }
