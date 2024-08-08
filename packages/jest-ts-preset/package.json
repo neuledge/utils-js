@@ -12,7 +12,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "ts-jest": "^29.2.2"
+    "ts-jest": "^29.2.4"
   },
   "peerDependencies": {
     "jest": ">= 29"
