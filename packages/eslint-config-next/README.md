@@ -13,6 +13,9 @@ pnpm add -D eslint husky lint-staged prettier @neuledge/eslint-config-next
 ```json
 {
   "extends": "@neuledge/next",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
 
   "settings": {
     "next": {

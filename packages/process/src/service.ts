@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-process-exit */
 import { awaitTimeout, MINUTE_MS, SECOND_MS } from '@neuledge/units';
 import {
   printError,
@@ -154,19 +155,28 @@ export const initService = async (
   const exitHandler = (): void => {
     printLog(`exit signal catch`);
 
-    terminate();
+    terminate().catch((error) => {
+      printError(`Error on terminate`, error);
+      process.exit(1);
+    });
   };
 
   process.on('unhandledRejection', (err) => {
     printError(`Unhandled Rejection`, err);
 
-    terminate();
+    terminate().catch((error) => {
+      printError(`Error on terminate`, error);
+      process.exit(1);
+    });
   });
 
   process.on('uncaughtException', (err) => {
     printError(`Unhandled Exception`, err);
 
-    terminate();
+    terminate().catch((error) => {
+      printError(`Error on terminate`, error);
+      process.exit(1);
+    });
   });
 
   process.on('SIGTERM', exitHandler);
