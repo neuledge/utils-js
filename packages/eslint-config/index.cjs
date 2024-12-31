@@ -14,7 +14,7 @@ module.exports = {
   ],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:unicorn/recommended',
 
     // Make sure this is always the last configuration in the extends array:
@@ -81,6 +81,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-empty-function': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
     'unicorn/explicit-length-check': 'off',
     'unicorn/prefer-number-properties': 'off',
     'unicorn/prevent-abbreviations': 'off',
