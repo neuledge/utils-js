@@ -25,8 +25,12 @@
       "dependsOn": ["^test", "build", "types"],
       "inputs": ["src/**", "test/**"]
     },
-    "lint": {},
-    "lint:strict": {},
+    "lint": {
+      "dependsOn": ["^types"]
+    },
+    "lint:strict": {
+      "dependsOn": ["^types"]
+    },
     "deploy": {
       "dependsOn": ["test", "lint:strict"]
     }
